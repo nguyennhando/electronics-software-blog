@@ -8,20 +8,24 @@ export default function Home() {
   const featuredProjects = getProjects().slice(0, 3);
 
   return (
-    <div className="space-y-16">
+    <div className="space-y-18">
       <HeroGrid />
 
       <section className="space-y-6">
-        <div className="flex items-end justify-between gap-4">
+        <div className="section-frame">
           <div>
             <p className="section-kicker">Latest Notes</p>
             <h2 className="section-title">Bai viet moi ve firmware, Linux va hardware</h2>
+            <p className="section-dek">
+              Cac bai viet duoc trinh bay theo nhiep cua mot chuyen muc tech magazine:
+              ro y, doc nhanh va van du chi tiet de quay lai tham chieu.
+            </p>
           </div>
           <Link className="inline-link" href="/posts">
             Xem tat ca bai viet
           </Link>
         </div>
-        <div className="grid gap-5 md:grid-cols-3">
+        <div className="story-grid lg:story-grid-wide">
           {recentPosts.map((post) => (
             <ContentCard key={post.slug} item={post} href={`/posts/${post.slug}`} />
           ))}
@@ -29,16 +33,20 @@ export default function Home() {
       </section>
 
       <section className="space-y-6">
-        <div className="flex items-end justify-between gap-4">
+        <div className="section-frame">
           <div>
             <p className="section-kicker">Project Archive</p>
             <h2 className="section-title">Ho so du an de luu mach, BOM, ghi chu va code</h2>
+            <p className="section-dek">
+              Moi project co the dong vai tro nhu mot feature story: muc tieu, stack,
+              status va cac moc tien do duoc trinh bay ro rang.
+            </p>
           </div>
           <Link className="inline-link" href="/projects">
             Xem toan bo du an
           </Link>
         </div>
-        <div className="grid gap-5 md:grid-cols-3">
+        <div className="story-grid lg:story-grid-wide">
           {featuredProjects.map((project) => (
             <ContentCard
               key={project.slug}
