@@ -34,9 +34,30 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   background:
-    radial-gradient(circle at top left, rgba(15, 98, 254, 0.18), transparent 24rem),
-    radial-gradient(circle at top right, rgba(239, 68, 68, 0.12), transparent 20rem),
-    linear-gradient(180deg, #f8fbff 0%, #edf2f7 40%, #e6ecf4 100%);
+    radial-gradient(circle at 8% 12%, rgba(15, 98, 254, 0.16) 0, rgba(15, 98, 254, 0.16) 0.28rem, transparent 0.3rem),
+    radial-gradient(circle at 84% 16%, rgba(15, 98, 254, 0.15) 0, rgba(15, 98, 254, 0.15) 0.32rem, transparent 0.34rem),
+    radial-gradient(circle at 18% 68%, rgba(15, 98, 254, 0.12) 0, rgba(15, 98, 254, 0.12) 0.26rem, transparent 0.28rem),
+    radial-gradient(circle at 76% 78%, rgba(15, 98, 254, 0.14) 0, rgba(15, 98, 254, 0.14) 0.3rem, transparent 0.32rem),
+    linear-gradient(90deg, transparent 10%, rgba(15, 98, 254, 0.09) 10%, rgba(15, 98, 254, 0.09) 10.25%, transparent 10.25%, transparent 47%, rgba(15, 98, 254, 0.07) 47%, rgba(15, 98, 254, 0.07) 47.22%, transparent 47.22%, transparent 74%, rgba(15, 98, 254, 0.07) 74%, rgba(15, 98, 254, 0.07) 74.24%, transparent 74.24%),
+    linear-gradient(0deg, transparent 18%, rgba(15, 98, 254, 0.08) 18%, rgba(15, 98, 254, 0.08) 18.22%, transparent 18.22%, transparent 62%, rgba(15, 98, 254, 0.06) 62%, rgba(15, 98, 254, 0.06) 62.2%, transparent 62.2%),
+    linear-gradient(rgba(8, 17, 31, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(8, 17, 31, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at top left, rgba(15, 98, 254, 0.16), transparent 24rem),
+    radial-gradient(circle at top right, rgba(239, 68, 68, 0.08), transparent 20rem),
+    linear-gradient(180deg, #f9fbff 0%, #edf2f7 45%, #e4ebf3 100%);
+  background-size:
+    auto,
+    auto,
+    auto,
+    auto,
+    100% 100%,
+    100% 100%,
+    38px 38px,
+    38px 38px,
+    auto,
+    auto,
+    auto;
+  background-attachment: fixed;
 }
 
 a {
