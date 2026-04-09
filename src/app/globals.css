@@ -33,10 +33,14 @@ body {
   min-height: 100%;
   color: var(--foreground);
   font-family: var(--font-sans);
-  background:
-    linear-gradient(rgba(249, 251, 255, 0.78), rgba(228, 235, 243, 0.86)),
-    url("/my-background.jpg") center/cover fixed no-repeat;
+  background-color: #edf2f7;
+  background-image:
+    linear-gradient(rgba(8, 17, 31, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(8, 17, 31, 0.04) 1px, transparent 1px),
+    radial-gradient(circle at top left, rgba(15, 98, 254, 0.16), transparent 24rem);
+  background-size: 32px 32px, 32px 32px, auto;
 }
+
 
 
 
