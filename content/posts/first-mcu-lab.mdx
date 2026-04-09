@@ -1,0 +1,39 @@
+---
+title: "Ghi chu khoi dong mot board ESP32 cho node cam bien"
+excerpt: "Template bai viet de ghi lai wiring, thu vien, muc tieu dong dien va cach test firmware."
+date: "2026-04-09"
+tags:
+  - esp32
+  - firmware
+  - sensors
+---
+
+## Muc tieu
+
+Tai lieu hoa nhanh mot board node cam bien de luc quay lai co ngay so do khoi, checklist test va lenh build.
+
+## Wiring co ban
+
+| Khoi | Chan |
+| --- | --- |
+| I2C SDA | GPIO21 |
+| I2C SCL | GPIO22 |
+| LED debug | GPIO2 |
+
+## Checklist firmware
+
+- Kiem tra xung clock va nguon 3V3 on dinh.
+- Flash firmware debug dau tien.
+- Mo serial log de xac nhan init thanh cong.
+- Do dong tieu thu o che do idle.
+
+## Lenh build mau
+
+```bash
+idf.py build
+idf.py flash monitor
+```
+
+## Ghi chu
+
+Ban co the them anh so do, BOM, log bug va cac block code truc tiep trong file MDX nay.
