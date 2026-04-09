@@ -33,12 +33,12 @@ body {
   min-height: 100%;
   color: var(--foreground);
   font-family: var(--font-sans);
-  background-color: #edf2f7;
-  background-image:
-    linear-gradient(rgba(8, 17, 31, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(8, 17, 31, 0.04) 1px, transparent 1px),
-    radial-gradient(circle at top left, rgba(15, 98, 254, 0.16), transparent 24rem);
-  background-size: 32px 32px, 32px 32px, auto;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(15, 98, 254, 0.13), transparent 24rem),
+    radial-gradient(circle at 88% 14%, rgba(14, 165, 233, 0.12), transparent 22rem),
+    radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0) 34rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.32)),
+    linear-gradient(180deg, #fbfdff 0%, #f2f6fb 48%, #e9eff7 100%);
 }
 
 
